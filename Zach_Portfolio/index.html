@@ -1,0 +1,1299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zach Digital Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/Content/font-awesome.min.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="/Content/owl.carousel.css">
+    <link rel="stylesheet" href="/Content/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="/Content/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/Content/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/Content/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/Images/favicon-16x16.png">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    
+    <!--Style -->
+    <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
+
+
+    <!-- Custom scripts -->
+
+    <!--FizzBuzz Script for Coloring and Styling Words-->
+    <style>
+        .Fizz{
+            color: red;
+            font-size: large;
+        }
+        .Buzz{
+            color: blue;
+            font-size: large;
+        }
+        .FizzBuzz{
+            font-style: italic;
+            color: darkviolet;
+            font-size: x-large;
+        }
+    </style>
+
+
+    <style>
+        #paddedCol .col {
+            padding-bottom: 20px;
+        }
+
+        #btnMain {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="#intro" class="navbar-brand scrollTo">Zach Pruitt</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+                <div id="navbarcollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link link-scroll">Portfolio Projects</a></li>
+                        <!--<li class="nav-item"><a href="#my work" class="nav-link link-scroll">Coding Challenges</a></li>-->
+                        <li class="nav-item"><a href="#references" class="nav-link link-scroll">Coding Challenges</a></li>
+                        <li class="nav-item"><a href="#customers" class="nav-link link-scroll">Resume'</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(Images/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+        <div class="container text-center">
+            <div data-animate="fadeInDown" class="logo"><img src="/Images/logo-big.png" alt="logo" width="130"></div>
+            <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, hola, नमस्ते !</h1>
+            <!--<p data-animate="slideInUp" class="h3 text-shadow text-400">Insert Text Here</p>-->
+        </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="bg-gradient services-section">
+        <div class="container">
+            <header class="text-center">
+                <h2 data-animate="fadeInDown" class="title">About me</h2>
+            </header>
+            <div class="row">
+                <div data-animate="fadeInUp" class="col-lg-6">
+                    <p>My name is Zach Pruitt and I was born and raised in the small town of Kernersville, North Carolina. </p>
+                    <p>Growing up I enjoyed playing baseball, golf, football, basketball and hockey. I was also an avid dirtbike rider, competing in Hare-Scramble events in the mountains on the weekends. My hobbies include playing guitar, reading, skim-boarding, kayaking, fishing, hiking, running, carpentry, and all things sports.  </p>
+                    <p>In my spare time I enjoy hanging out with friends, family, my girlfriend Kristina and our three dogs; Zoso, Karma and Suki. Kristina and I love to take the pups walking and hiking, and also enjoy spontaneous trips to the beach and mountains.</p>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-6">
+
+                    <!--<div class="skill-item">
+                        <div class="progress-title">PHP</div>
+                        <div class="progress">
+                            <div role="progressbar" style="width: 60%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="progress-title">Javascript</div>
+                        <div class="progress">
+                            <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="progress-title">HTML coding</div>
+                        <div class="progress">
+                            <div role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="progress-title">SEO</div>
+                        <div class="progress">
+                            <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="progress-title">SEM</div>
+                        <div class="progress">
+                            <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+                        </div>
+                    </div>-->
+
+                </div>
+                <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="/Images/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
+            </div>
+        </div>
+    </section>
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <!-- Portfolio Projects Section was previously references id-->
+    <section id="services">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="mb-5 text-center">
+                    <h2 data-animate="fadeInUp" class="title">Portfolio Projects</h2>
+                    <!--<p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p>-->
+                </div>
+                <ul id="filter" data-animate="fadeInUp">
+                    <li class="active"><a href="#" data-filter="all">All</a></li>
+                    <li><a href="#" data-filter="webdesign">Blog</a></li>
+                    <li><a href="#" data-filter="seo">Bug Tracker</a></li>
+                    <li><a href="#" data-filter="marketing">Financial Portal Phase 1</a></li>
+                    <li><a href="#" data-filter="other">Financial Portal Phase 2</a></li>
+                    <li><a href="#" data-filter="other">Financial Portal Phase 3</a></li>
+                </ul>
+                <div id="detail">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <span class="close">×</span>
+                            <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                            <div class="text-center">
+                                <h1 id="detail-title" class="title"></h1>
+                            </div>
+                            <div id="detail-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reference detail-->
+                <div id="references-masonry" data-animate="fadeInUp">
+                    <div class="row">
+                        <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-2.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-1.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name 2</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider3.jpg,img/main-slider1.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-6.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name 3</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-5.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name 4</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--<div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-5.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name 5</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-6.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name 6</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-7.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="/Images/portfolio-8.jpg" alt="" class="img-fluid">
+                                    <div class="overlay">
+                                        <div class="inner">
+                                            <h3 class="h4 reference-title">Project name</h3>
+                                            <p>Short project description goes here...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div data-images="/Images/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                                    <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Challenges was previously references id -->
+    <!-- Services -->
+    <section id="references" class="bg-gradient services-section">
+        <div class="container">
+            <header class="text-center">
+                <h2 data-animate="fadeInDown" class="title">Coding Challenges</h2>  <!--Was previuosly "services"-->
+            </header>
+            <div class="row services text-center">
+                <div data-animate="fadeInUp" class="col-lg-4">
+                    <div class="icon"><i class="fa fa-calculator"></i></div>
+                    <h3 class="heading mb-3 text-400">Math Exercises</h3>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal3">
+                        Math Exercise 1
+                    </button>
+                    <p class="text-left description"></p>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-4">
+                    <div class="icon"><i class="fa fa-binoculars"></i></div>
+                    <h3 class="heading mb-3 text-400">Fizz Buzz</h3>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal5">
+                        Fizz Buzz
+                    </button>
+                    <p class="text-left description"></p>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-4">
+                    <div class="icon"><i class="fa fa-arrows-h"></i></div>
+                    <h3 class="heading mb-3 text-400">Palindrome</h3>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal6">
+                        Palindrome
+                    </button>
+                    <p class="text-left description"></p>
+                </div>
+            </div>
+            <hr data-animate="fadeInUp">
+            <!--<div data-animate="fadeInUp" class="text-center">
+                <p class="lead">Would you like to know more or just discuss something?</p>
+                <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
+            </div>-->
+        </div>
+    </section>
+
+
+    <!-- Testimonials-->
+    <!--<section id="testimonials" class="testimonials-section bg-gray">
+        <div class="container">
+            <header class="text-center mb-2">
+                <h2 data-animate="fadeInUp" class="title">My customers said<br><span>about me</span></h2>
+                <p data-animate="fadeInUp" class="lead">I am always glad to hear that my customers leave satisfied. Some of them shared with you their insights on our cooperation.</p>
+            </header>
+            <ul data-animate="fadeInUp" class="owl-carousel owl-theme testimonials equalize-height">
+                <li class="item">
+                    <div class="testimonial full-height">
+                        <div class="text">
+                            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon"><i class="fa fa-quote-left"></i></div>
+                            <div class="name-picture">
+                                <img alt="" src="/Images/person-1.jpg">
+                                <h5>John McIntyre</h5>
+                                <p>CEO, TransTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="testimonial full-height">
+                        <div class="text">
+                            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &quot;What is happened to me? &quot; he thought. It was not a dream.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon"><i class="fa fa-quote-left"></i></div>
+                            <div class="name-picture">
+                                <img alt="" src="/Images/person-2.jpg">
+                                <h5>John McIntyre</h5>
+                                <p>CEO, TransTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="testimonial full-height">
+                        <div class="text">
+                            <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon"><i class="fa fa-quote-left"></i></div>
+                            <div class="name-picture">
+                                <img alt="" src="/Images/person-3.jpg">
+                                <h5>John McIntyre</h5>
+                                <p>CEO, TransTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="testimonial full-height">
+                        <div class="text">
+                            <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon"><i class="fa fa-quote-left"></i></div>
+                            <div class="name-picture">
+                                <img alt="" src="/Images/person-4.jpg">
+                                <h5>John McIntyre</h5>
+                                <p>CEO, TransTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="testimonial full-height">
+                        <div class="text">
+                            <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="icon"><i class="fa fa-quote-left"></i></div>
+                            <div class="name-picture">
+                                <img alt="" src="/Images/person-4.jpg">
+                                <h5>John McIntyre</h5>
+                                <p>CEO, TransTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>-->
+    <!-- Statistics-->
+    <!--<section id="statistics" data-dir="up" style="background: url(&quot;Images/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
+        <div class="container">
+            <div class="row showcase text-center">
+                <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-align-justify"></i></div>
+                        <h5 class="text-400 mt-4 text-uppercase"><span class="counter">120</span><br>Websites</h5>
+                    </div>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-users"></i></div>
+                        <h5 class="text-400 mt-4 text-uppercase"><span class="counter">50</span><br>Satisfied Clients</h5>
+                    </div>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-copy"></i></div>
+                        <h5 class="text-400 mt-4 text-uppercase"><span class="counter">320</span><br>Projects</h5>
+                    </div>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="icon"><i class="fa fa-font"></i></div>
+                        <h5 class="text-400 mt-4 text-uppercase"><span class="counter">333</span><br>Magazines and Brochures</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dark-mask"></div>
+    </section>-->
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <!-- Professional Social Media Links-->
+    <section id="customers" class="customers-section bg-gray">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="title">Resume'</h2>
+            </header>
+            <div class="col-md-12">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+
+                    </div>
+                    <!--
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-1.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-2.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-3.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-4.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-5.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="customer"><img src="/Images/logo-6.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section id="contact" data-animate="bounceIn" class="bg-gradient services-section">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="title">Contact me</h2>
+            </header>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contact-form" method="post" action="">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-outline-light">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map-->
+    <div id="map"></div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left">
+                    <p class="social"><a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fa fa-google-plus"></i></a><a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
+                </div>
+                <!-- /.6-->
+                <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
+                    <p>© 2019 Zach Pruitt Portfolio. All rights reserved.</p>
+                </div>
+                <div class="col-12 mt-4">
+                    <!--<p class="template-bootstrapious">Template by <a href='//bootstrapious.com/p/bootstrap-carousel'>Bootstrapious</a> & <a href="//fity.cz/ostrava">Fity</a></p>-->
+                    <!-- Please do not remove the backlink to us unless you support further theme's development at //bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Modal placeholder section -->
+    <!-- Button to Open the Modal 1 Grid Exercise -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+        Grid 1
+    </button>
+
+    <!-- The Modal 1 for Grid Exercise 1-->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-4 h4">
+                            <div class="row">
+                                <div class="col-md-4">4</div>
+                                <div class="col-md-4">4</div>
+                                <div class="col-md-4">4</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">6</div>
+                                <div class="col-md-6">6</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">12</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 h6">
+                            <div class="row">
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-3">3</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 h8">
+                            <div class="row">
+                                <div class="col-md-8">8</div>
+                                <div class="col-md-4">4</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">6</div>
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-3">3</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">2</div>
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-2">2</div>
+                                <div class="col-md-3">3</div>
+                                <div class="col-md-2">2</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                                <div class="col-sm-1">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button to Open the Modal Grid Exercise 2 -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+        Grid 2
+    </button>
+
+    <!-- The Modal 2 for Grid Exercise 2-->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Grid Exercise 2</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">1</div>
+                            <div class="col-md-9">2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 h2">H2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">3</div>
+                            <div class="col-md-2">4</div>
+                            <div class="col-md-2">5</div>
+                            <div class="col-md-2">6</div>
+                            <div class="col-md-2">7</div>
+                            <div class="col-md-2">8</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 h3">H3</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">9</div>
+                            <div class="col-md-1">10</div>
+                            <div class="col-md-1">11</div>
+                            <div class="col-md-1">12</div>
+                            <div class="col-md-1">13</div>
+                            <div class="col-md-1">14</div>
+                            <div class="col-md-1">15</div>
+                            <div class="col-md-1">16</div>
+                            <div class="col-md-1">17</div>
+                            <div class="col-md-1">18</div>
+                            <div class="col-md-1">19</div>
+                            <div class="col-md-1">20</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-6">H4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">21</div>
+                            <div class="col-md-3">22</div>
+                            <div class="col-md-6">23</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+        Math Exercise 1
+    </button>
+
+    <!-- The Modal 3 for JS Math Exercise 1-->
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Math Exercise 1</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">Input 1:</div>
+                                <div class="col-md-4">
+                                    <input type="number" id="input1" class="form-control" placeholder="Enter number 1" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <label id="resultMin"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Input 2:</div>
+                                <div class="col-md-4">
+                                    <input type="number" id="input2" class="form-control" placeholder="Enter number 2" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <label id="resultMax"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Input 3:</div>
+                                <div class="col-md-4">
+                                    <input type="number" id="input3" class="form-control" placeholder="Enter number 3" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <label id="resultAvg"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Input 4:</div>
+                                <div class="col-md-4">
+                                    <input type="number" id="input4" class="form-control" placeholder="Enter number 4" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <label id="resultSum"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Input 5:</div>
+                                <div class="col-md-4">
+                                    <input type="number" id="input5" class="form-control" placeholder="Enter number 5" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <label id="resultProduct"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-success" id="calculate">Calculate</button>
+                                    <button type="button" class="btn btn-warning" id="clear">Clear</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="button" id="showCode">Show Code</button>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row" id="mathCode">
+                                <div class="col">
+                                    <pre class="brush:js">
+$("#calculate").click(function () {
+            //step1: get user data
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //step2: make calculation with data
+            var min = Math.min(num1, num2, num3, num4, num5);
+            var max = Math.max(num1, num2, num3, num4, num5);
+            var avg = ((num1 + num2 + num3 + num4 + num5) / 5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var product = (num1 * num2 * num3 * num4 * num5);
+
+
+            //step3:
+            var minOutput = "The smallest of your numbers is " + min + ".";
+            $("#resultMin").text(minOutput);
+
+            var maxOutput = "The largest of your numbers is " + max + ".";
+            $("#resultMax").text(maxOutput);
+
+            var avgOutput = "The average of your numbers is " + avg + ".";
+            $("#resultAvg").text(avgOutput);
+
+            var sumOutput = "The sum of your numbers is " + sum + ".";
+            $("#resultSum").text(sumOutput);
+
+            var productOutput = "The product of your numbers is " + product + ".";
+            $("#resultProduct").text(productOutput);
+        })
+        $("#clear").click(function () {
+
+            $("#input1,#input2,#input3,#input4,#input5").val("");
+
+            $("#resultMin").text("");
+            $("#resultMax").text("");
+            $("#resultAvg").text("");
+            $("#resultSum").text("");
+            $("#resultProduct").text("");
+        });
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Practice Math Modal from Instructor Jason -->
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+        Example Math
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Example Math Exercise</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col text-center h3">
+                                My first JS exercise.
+                            </div>
+                        </div>
+
+                        <hr style="border:2px solid black" />
+
+                        <div class="row">
+                            <div class="col-md-3" id="paddedCol">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input1" placeholder="Enter number 1" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input2" placeholder="Enter number 2" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input3" placeholder="Enter number 3" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input4" placeholder="Enter number 4" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input5" placeholder="Enter number 5" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <button class="btn-dark btn-md" id="btnMain">Calculate</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <label id="results"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fizz Buzz MODAL -->
+    
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+        Fizz Buzz
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Fizz Buzz Exercise</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col h10">
+                                <p>Please enter a number in the "Entry" fields below ranging between 1 and 100.</p>
+                                <p>- For each number that is a multiple of your first entry, the word "Fizz" will populate.</p>
+                                <p>- For each number that is a multiple of your second entry, the word "Buzz" will populate.</p>
+                                <p>- For each number that is a multiple of both entries, the word "FizzBuzz" will populate.</p>
+                                <p> Give it a try!</p>
+                            </div>
+                        </div>
+
+                        <hr style="border:2px solid black" />
+
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">Entry 1</div>
+                                        <div class="col-md-8">
+                                            <input type="number" id="Fizzvalue" name="fizz" class="form-control" placeholder="Fizz number between 1 and 100" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">Entry 2</div>
+                                        <div class="col-md-8">
+                                            <input type="number" id="Buzzvalue" name="buzz" class="form-control" placeholder="Buzz number between 1 and 100" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-8">
+                                <button id="" type="button" class="btn btn-success" onclick="buzzIT()">Get Results</button>
+                                <button type="button" class="btn btn-warning" id="clearEntry">Clear Entries</button>
+                                <button type="button" class="btn btn-primary" id="showCode2">Show Code</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label><span class="h3">Results:</span></label><br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <p id="results1"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Palindrome Modal-->
+    
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#palindromeModal">
+        Palindrome
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="palindromeModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Palindrome Exercise</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript files-->
+    <script src="/Scripts/jquery.min.js"></script>
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script src="/Scripts/owl.carousel.min.js"></script>
+    <script src="/Scripts/jquery.waypoints.min.js"></script>
+    <script src="/Scripts/jquery.counterup.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <script src="/Scripts/front.js"></script>
+    <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+
+
+    <!--Custom Scripts For Deliverable 1 -->
+    <!--Syntax Highlighter Script for Show/Hide Code Function-->
+    <script>
+        SyntaxHighlighter.all()
+    </script>
+
+
+    <!--Show/Hide Toggle Button for Math Exercise 1-->
+    <script>
+        $("#mathCode").hide()
+        $("#showCode").click(function () {
+            $("#mathCode").toggle()
+        });
+    </script>
+
+
+
+    <!--FizzBuzz Calculations -->
+
+    <script>
+        //step2: make calculations with data
+        function FizzBuzzA(value1, value2) {
+            let returnValue = "";
+            for (let i = 1; i <= 100; i++) {
+                if (i % value1 == 0 && i % value2 == 0) {
+                    returnValue += "<span class='FizzBuzz'>FizzBuzz, </span>";
+                }
+                else if (i % value1 == 0) {
+                    returnValue += "<span class='Fizz'>Fizz, </span>";
+                }
+                else if (i % value2 == 0) {
+                    returnValue += "<span class='Buzz'>Buzz, </span>";
+                }
+                else {
+                    returnValue += i + " " + ", ";
+                }
+            }
+            return returnValue;
+        }
+        //step3: process results
+        //Call and Use our FizzBuzz
+        function buzzIT() {
+            let output = "";
+            let val1 = document.getElementById("Fizzvalue").value;
+            let val2 = document.getElementById("Buzzvalue").value;
+            output = FizzBuzzA(val1, val2);
+            document.getElementById("results1").innerHTML = output;
+        }
+    </script>
+
+    <!--<script> Alternate function for FizzBuzz
+                function FizzBuzzB(value1,value2) {
+                    let returnValue = "";
+                    for (let i = 1; i <= 100; i++) {
+                        returnValue += ((i % value1 == 0 ? "Fizz" : "") + (i % value2 == 0 ? "Buzz" : "") || i) + " ";
+                    }
+                    return returnValue;
+                }
+
+
+    //Call and Use our FizzBuzz
+                function buzzIT(){
+                    let output = "";
+                    let val1 = document.getElementById("Fizzvalue").value;
+                    let val2 = document.getElementById("Buzzvalue").value;
+                    output = FizzBuzzB(val1, val2);
+                    document.getElementById("results").innerHTML = output;
+                }
+            </script>-->
+    <!--Calculations for Math Exercise 1 -->
+    <script>
+
+        $("#calculate").click(function () {
+            //step1: get user data
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //step2: make calculation with data
+            var min = Math.min(num1, num2, num3, num4, num5);
+            var max = Math.max(num1, num2, num3, num4, num5);
+            var avg = ((num1 + num2 + num3 + num4 + num5) / 5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var product = (num1 * num2 * num3 * num4 * num5);
+
+
+            //step3:
+            var minOutput = "The smallest of your numbers is " + min + ".";
+            $("#resultMin").text(minOutput);
+
+            var maxOutput = "The largest of your numbers is " + max + ".";
+            $("#resultMax").text(maxOutput);
+
+            var avgOutput = "The average of your numbers is " + avg + ".";
+            $("#resultAvg").text(avgOutput);
+
+            var sumOutput = "The sum of your numbers is " + sum + ".";
+            $("#resultSum").text(sumOutput);
+
+            var productOutput = "The product of your numbers is " + product + ".";
+            $("#resultProduct").text(productOutput);
+        })
+
+
+        //Function for Click Button to clear all input values
+        $("#clear").click(function () {
+
+            $("#input1,#input2,#input3,#input4,#input5").val("");
+
+            $("#resultMin").text("");
+            $("#resultMax").text("");
+            $("#resultAvg").text("");
+            $("#resultSum").text("");
+            $("#resultProduct").text("");
+        });
+
+    </script>
+
+
+
+
+    <script>
+        //Use jQuery to add a click event handler to my button
+
+        $("#btnMain").click(function () {
+            //step1: get user data
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //step2: make calculation with data
+
+            var sum = num1 + num2 + num3 + num4 + num5;
+
+            //step3:
+
+            var sumOutput = "The sum of your numbers is " + sum + ".";
+            $("#results").text(sumOutput);
+        })
+
+                                                //var demoString = "5";
+                                                //var y = 5;
+                                                //var data = "5";
+
+                                                //ShowAlert2(data);
+                                                //function ShowAlert2(data) {
+                                                //    alert("The value of demostring is: " + data);
+                                                //}
+
+                                                ////looping structures
+                                                //var message = "";
+                                                //for (let loop = 0, innerloop = 0; loop < 50; loop += 5) {
+                                                //    message +=
+                                                //        }
+
+                                                //message = message + "hello";
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
