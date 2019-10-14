@@ -348,7 +348,7 @@
                 <h2 data-animate="fadeInDown" class="title">Coding Challenges</h2>  <!--Was previuosly "services"-->
             </header>
             <div class="row services text-center">
-                <div data-animate="fadeInUp" class="col-lg-4">
+                <div data-animate="fadeInUp" class="col-lg-3">
                     <div class="icon"><i class="fa fa-calculator"></i></div>
                     <h3 class="heading mb-3 text-400">Math Exercises</h3>
                     <!-- Button to Open the Modal -->
@@ -357,7 +357,7 @@
                     </button>
                     <p class="text-left description"></p>
                 </div>
-                <div data-animate="fadeInUp" class="col-lg-4">
+                <div data-animate="fadeInUp" class="col-lg-3">
                     <div class="icon"><i class="fa fa-binoculars"></i></div>
                     <h3 class="heading mb-3 text-400">Fizz Buzz</h3>
                     <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal5">
@@ -365,11 +365,19 @@
                     </button>
                     <p class="text-left description"></p>
                 </div>
-                <div data-animate="fadeInUp" class="col-lg-4">
+                <div data-animate="fadeInUp" class="col-lg-3">
                     <div class="icon"><i class="fa fa-arrows-h"></i></div>
                     <h3 class="heading mb-3 text-400">Palindrome</h3>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal6">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#palindromeModal">
                         Palindrome
+                    </button>
+                    <p class="text-left description"></p>
+                </div>
+                <div data-animate="fadeInUp" class="col-lg-3">
+                    <div class="icon"><i class="fa fa-dollar"></i></div>
+                    <h3 class="heading mb-3 text-400">Factorial</h3>
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#factorialModal">
+                        Factorial
                     </button>
                     <p class="text-left description"></p>
                 </div>
@@ -987,7 +995,6 @@ $("#calculate").click(function () {
 
 
     <!-- Fizz Buzz MODAL -->
-    
     <!-- Button to Open the Modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
         Fizz Buzz
@@ -1077,7 +1084,6 @@ $("#calculate").click(function () {
 
 
     <!--Palindrome Modal-->
-    
     <!-- Button to Open the Modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#palindromeModal">
         Palindrome
@@ -1096,7 +1102,35 @@ $("#calculate").click(function () {
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col h10">
+                                <p>This exercise is used to determine if the Users' input is a Palindrome.</p>
+                                <p>A Palindrome is a word, phrase, or sequence that reads the same backwards as it does forward.</p>
+                                <p>For example; dad, pop, and mom, are all Palindromes.</p>
+                                <p>Give it a try!</p>
+                            </div>
+                        </div>
+
+                        <hr style="border:2px solid black" />
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" id="PalInput" class="form-control" placeholder="Enter Word Here" />
+                            </div>
+                            <div class="col-lg-6">
+                                <label id="PalOutput"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-success" id="Palbtn">Get Results</button>
+                                <button type="button" class="btn btn-warning" id="PalClear">Clear</button>
+                                <button type="button" class="btn btn-primary" data-toggle="button" id="ShowCodebtn">Show Code</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Modal footer -->
@@ -1109,6 +1143,63 @@ $("#calculate").click(function () {
     </div>
 
 
+    <!--Factorial Modal-->
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#factorialModal">
+        Factorial
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="factorialModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Factorial Exercise</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col h10">
+                                <p>This exercise is used to determine the factorial of a given number.</p>
+                                <p>A Factorial is the product of an integer and all the integers below it.</p>
+                                <p>For example, the factorial of <strong>4</strong> is <strong>24</strong>...(4*3*2*1) = 24</p>
+                                <p>Give it a try!</p>
+                            </div>
+                        </div>
+
+                        <hr style="border:2px solid black" />
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" id="FactInput" class="form-control" placeholder="Please enter a # less than 171" />
+                            </div>
+                            <div class="col-lg-6">
+                                <label id="FactOutput"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-success" id="Factorialbtn">Get Results</button>
+                                <button type="button" class="btn btn-warning" id="FactorialClear">Clear</button>
+                                <button type="button" class="btn btn-primary" data-toggle="button" id="ShowCodeFactorial">Show Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+    </div>
 
 
     <!-- JavaScript files-->
@@ -1139,6 +1230,63 @@ $("#calculate").click(function () {
         });
     </script>
 
+
+
+    <!--Factorial Algorithm-->
+
+    <script>
+        //Get User Data
+        $("#Factorialbtn").click(function () {
+            var number = Number($("#FactInput").val());
+
+            //Evaluate Data
+            if (number >= 171) {
+                alert("Please enter a valid number between 1 and 171.");
+                $("#FactInput").val("");
+                return;
+            }
+
+            //Perform Factorial
+            for (var Factorial = number - 1; Factorial > 1; Factorial--) {
+                number *= Factorial;
+            }
+
+            //Show Result
+            $("#FactOutput").text(number);
+        });
+
+        //Clear Input and Output Fields
+        $("#FactorialClear").click(function () {
+            $("#FactInput").val("");
+            $("#FactOutput").text("");
+        });
+    </script>
+
+
+
+    <!--Palindrome Algorithm-->
+
+    <script>
+        $("#Palbtn").click(function () {
+            var word = $("#PalInput").val();
+            var listArray = word.split('')
+            var flipArray = listArray.reverse();
+            var wordFlip = flipArray.join('');
+
+            if (word === wordFlip) {
+                $("#PalOutput").text('Success! ' + word + ' is a Palindrome.')
+            } else {
+                $("#PalOutput").text('Sorry, ' + word + ' is not a Palindrome.')
+            }
+        });
+
+        //Clearing the Input & Output fields
+
+        $("#PalClear").click(function () {
+            $("#PalInput").val('');
+            $("#PalOutput").text('');
+        });
+    </script>
 
 
     <!--FizzBuzz Calculations -->
@@ -1174,26 +1322,8 @@ $("#calculate").click(function () {
         }
     </script>
 
-    <!--<script> Alternate function for FizzBuzz
-                function FizzBuzzB(value1,value2) {
-                    let returnValue = "";
-                    for (let i = 1; i <= 100; i++) {
-                        returnValue += ((i % value1 == 0 ? "Fizz" : "") + (i % value2 == 0 ? "Buzz" : "") || i) + " ";
-                    }
-                    return returnValue;
-                }
 
-
-    //Call and Use our FizzBuzz
-                function buzzIT(){
-                    let output = "";
-                    let val1 = document.getElementById("Fizzvalue").value;
-                    let val2 = document.getElementById("Buzzvalue").value;
-                    output = FizzBuzzB(val1, val2);
-                    document.getElementById("results").innerHTML = output;
-                }
-            </script>-->
-    <!--Calculations for Math Exercise 1 -->
+    <!--Math Exercise 1 Calculations-->
     <script>
 
         $("#calculate").click(function () {
@@ -1268,22 +1398,22 @@ $("#calculate").click(function () {
             $("#results").text(sumOutput);
         })
 
-                                                //var demoString = "5";
-                                                //var y = 5;
-                                                //var data = "5";
+                                                    //var demoString = "5";
+                                                    //var y = 5;
+                                                    //var data = "5";
 
-                                                //ShowAlert2(data);
-                                                //function ShowAlert2(data) {
-                                                //    alert("The value of demostring is: " + data);
-                                                //}
+                                                    //ShowAlert2(data);
+                                                    //function ShowAlert2(data) {
+                                                    //    alert("The value of demostring is: " + data);
+                                                    //}
 
-                                                ////looping structures
-                                                //var message = "";
-                                                //for (let loop = 0, innerloop = 0; loop < 50; loop += 5) {
-                                                //    message +=
-                                                //        }
+                                                    ////looping structures
+                                                    //var message = "";
+                                                    //for (let loop = 0, innerloop = 0; loop < 50; loop += 5) {
+                                                    //    message +=
+                                                    //        }
 
-                                                //message = message + "hello";
+                                                    //message = message + "hello";
 
     </script>
 
