@@ -101,8 +101,17 @@
     <Content Include="Content\style.default.css" />
     <Content Include="Font\fontawesome-webfont.svg" />
     <Content Include="Images\about.jpg" />
+    <Content Include="Images\Bug_Magnifying_Glass.png" />
+    <Content Include="Images\CSharp.png" />
+    <Content Include="Images\CSS.png" />
     <Content Include="Images\favicon-16x16.png" />
+    <Content Include="Images\Financial Portal 1.png" />
+    <Content Include="Images\Financial Portal 2.png" />
     <Content Include="Images\home.jpg" />
+    <Content Include="Images\Html.png" />
+    <Content Include="Images\Java.png" />
+    <Content Include="Images\jQuery.png" />
+    <Content Include="Images\lady-bug.png" />
     <Content Include="Images\logo-1.svg" />
     <Content Include="Images\logo-2.svg" />
     <Content Include="Images\logo-3.svg" />
@@ -127,6 +136,8 @@
     <Content Include="Images\portfolio-6.jpg" />
     <Content Include="Images\portfolio-7.jpg" />
     <Content Include="Images\portfolio-8.jpg" />
+    <Content Include="Images\Screenshot_20191125-010902_Instagram.jpg" />
+    <Content Include="Images\Xamarin.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\front.js" />
@@ -216,6 +227,7 @@
     <Content Include="Font\fontawesome-webfont.woff2" />
     <Content Include="Font\fontawesome-webfont.ttf" />
     <Content Include="Font\fontawesome-webfont.eot" />
+    <Content Include="Font\Zach Pruitt Resume 2019.docx.pdf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
